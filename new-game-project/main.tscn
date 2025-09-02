@@ -19,10 +19,17 @@ offset_right = 21.0
 offset_bottom = 93.0
 
 [node name="Timer" type="Timer" parent="."]
-autostart = true
 
 [node name="Hero" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(3, -160)
+position = Vector2(98, -19)
+speed = 80
+
+[node name="Hero2" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(-257, 141)
+speed = 50
+
+[node name="Hero3" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(229, -19)
 
 [connection signal="button_down" from="CheckButton" to="." method="_on_check_button_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
