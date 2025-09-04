@@ -45,11 +45,19 @@ position = Vector2(845, 191)
 [node name="Area2D6" parent="." instance=ExtResource("4_1bvp3")]
 position = Vector2(834, -51)
 
-[node name="score" type="Label" parent="."]
-offset_left = 174.0
-offset_top = 71.0
-offset_right = 214.0
-offset_bottom = 94.0
+[node name="Hero" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(433, 184)
+isAI = true
+
+[node name="Hero3" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(657, 128)
+speed = 200
+isAI = true
+
+[node name="Hero4" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(492, 384)
+speed = 300
+isAI = true
 
 [connection signal="button_down" from="CheckButton" to="." method="_on_check_button_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
