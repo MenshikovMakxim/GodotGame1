@@ -1,6 +1,11 @@
 extends Node2D
 
+var score = 0
 
+func change_score(delta):
+	score+=delta
+	$score.text = str(score)
+	
 func _on_check_button_button_down() -> void:
 	print("Hi!") # Replace with function body.
 	$Icon.position.x+=10

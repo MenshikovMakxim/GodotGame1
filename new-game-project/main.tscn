@@ -20,7 +20,7 @@ offset_right = 21.0
 offset_bottom = 93.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 0.664
 autostart = true
 
 [node name="Hero2" parent="." instance=ExtResource("3_h2yge")]
@@ -44,6 +44,12 @@ position = Vector2(845, 191)
 
 [node name="Area2D6" parent="." instance=ExtResource("4_1bvp3")]
 position = Vector2(834, -51)
+
+[node name="score" type="Label" parent="."]
+offset_left = 174.0
+offset_top = 71.0
+offset_right = 214.0
+offset_bottom = 94.0
 
 [connection signal="button_down" from="CheckButton" to="." method="_on_check_button_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
